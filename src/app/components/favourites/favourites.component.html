@@ -1,0 +1,17 @@
+<div class="row">
+  <div class="col-12" *ngFor="let fav of favs">
+    <div class="card">
+      <div>
+        <img
+          src="{{ fav.thumbnail }}"
+          style="width: 150px; object-fit: cover"
+          alt="{{ fav.title }}"
+        />
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">{{ fav.title }}</h5>
+        <a href="#" class="btn btn-danger"><i class="bi bi-heartbreak"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
